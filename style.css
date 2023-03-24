@@ -1,0 +1,42 @@
+:root {
+    --primary-soft-orange: hsl(35, 77%, 62%);
+    --primary-soft-red: hsl(5, 85%, 63%);
+    --font-off-white: hsl(36, 100%, 99%);
+    --font-grayish-blue: hsl(233, 8%, 79%);
+    --font-dark-grayish-blue: hsl(236, 13%, 42%);
+    --title-very-dark-blue: hsl(240, 100%, 5%);
+    --font-text: 'Inter', sans-serif; /* 400, 700, 800 */ 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--font-text);
+}
+body {
+    font-size: 1.5rem;
+}
+
+header {
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 5%;
+}
+.header-container .logo-img {
+    width: 36px;
+}
+.header-container .logo-burger {
+    width: 32px;
+}
+.header-container nav {
+    display: none;
+}
