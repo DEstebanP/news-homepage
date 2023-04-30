@@ -1,0 +1,23 @@
+.logo-close {
+    margin-left: 85%;
+}
+nav .nav-items {
+    margin-left: 60px;
+    row-gap: 28px;
+}
+.nav-items li {
+    font-size: 1.8rem;
+}
+.main-intro {
+    grid-template-rows: minmax(230px, 250px) 1fr;
+    width: 85%;
+}
+.main-intro .web-3-img {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 100%;
+    object-fit: cover;
+}
+.main-intro h1 {
+    font-size: 3.8rem;
+    margin-right: 12px;
+}

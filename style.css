@@ -23,6 +23,7 @@ body {
 header {
     position: relative;
     width: 100%;
+    max-width: 1140px;
 }
 .header-container {
     display: flex;
@@ -34,19 +35,21 @@ header {
 }
 .header-container .logo-img {
     width: 36px;
+    cursor: pointer;
 }
 .header-container .logo-burger {
     width: 32px;
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     display: grid;
     grid-template-columns: 3fr 5fr;
     width: 100%;
     height: 100vh;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 nav .nav__tranparent-background {
     width: 100%;
@@ -65,10 +68,13 @@ nav .nav-right {
 nav .nav-items {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    column-gap: 20px;
     width: 100%;
     height: 100%;
     margin: 80px 0 0 30px;
+}
+.nav-items li {
+    font-size: 1.6rem;
 }
 .nav-items li {
     list-style: none;
@@ -83,13 +89,14 @@ main {
 }
 .main-intro {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
     justify-content: center;
     gap: 16px;
     width: 90%;
     min-width: 288px;
+    max-width: 630px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 8px 0 20px;
 }
 .main-intro .web-3-img {
     width: 100%;
@@ -119,7 +126,7 @@ main {
 .main-news {
     width: 90%;
     min-width: 288px;
-    max-width: 380px;
+    max-width: 350px;
     height: auto;
     margin: 36px auto 10px;
     padding: 20px 0;
@@ -152,10 +159,14 @@ main {
 }
 
 .main-top-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 16px;
+    justify-items: center;
     width: 90%;
     height: auto;
     min-width: 288px;
-    max-width: 320px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -165,6 +176,7 @@ main {
     column-gap: 18px;
     row-gap: 4px;
     width: 100%;
+    max-width: 300px;
     margin: 30px 0;
 }
 .item-new img {
@@ -179,7 +191,6 @@ main {
 }
 .item-new h3 {
     font-size: 1.7rem;
-    font-weight: 800;
     color: var(--title-very-dark-blue);
 }
 .item-new p {
