@@ -51,6 +51,9 @@ main {
     margin: 0;
     padding: 0;
 }
+.main-intro img {
+    content: url('../assets/images/image-web-3-desktop.jpg');
+}
 .main-intro__container button:hover {
     background-color: var(--title-very-dark-blue);
     cursor: pointer;
